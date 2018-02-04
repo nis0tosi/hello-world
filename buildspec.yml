@@ -3,7 +3,7 @@ phases:
   install:
     commands:
       - npm install time
-      - aws cloudformation package --template-file samTemplate.yaml --s3-bucket nis-home 
+      - aws cloudformation package --template-file samTemplate.yaml --s3-bucket codepipeline-ap-northeast-1-398803802606
                                    --output-template-file NewSamTemplate.yaml
 artifacts:
   type: zip
